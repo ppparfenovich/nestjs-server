@@ -20,20 +20,20 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  @UsePipes(StringToLowerCasePipe)
-  @Post()
-  create(@Body('title') title: string) {
-    return `Movie: ${title}`;
-  }
+  // @UsePipes(StringToLowerCasePipe)
+  // @Post()
+  // create(@Body('title') title: string) {
+  //   return `Movie: ${title}`;
+  // }
 
-  @UseGuards(AuthGuard)
-  @Get('@me')
-  getProfile(@UserAgent() userAgent: string) {
-    return {
-      id: 1,
-      name: 'Name',
-      email: 'name@gmail.com',
-      userAgent,
-    };
-  }
+  // @UseGuards(AuthGuard)
+  // @Get('@me')
+  // getProfile(@UserAgent() userAgent: string) {
+  //   return {
+  //     id: 1,
+  //     name: 'Name',
+  //     email: 'name@gmail.com',
+  //     userAgent,
+  //   };
+  // }
 }

@@ -9,6 +9,7 @@ import { MovieModule } from './movie/movie.module';
 import { ReviewModule } from './review/review.module';
 import { ActorModule } from './actor/actor.module';
 // import { LoggingMiddleware } from './common/middlewares/logger.middleware';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -24,6 +25,7 @@ import { ActorModule } from './actor/actor.module';
     MovieModule,
     ReviewModule,
     ActorModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],
